@@ -19,5 +19,4 @@ O usuário se torna capaz de filtrar a consulta de suas despesas de acordo com o
 ## Arquivos:
 index.html: Arquivo que armazena a página principal do site.
 consulta.html: Arquivo que armazena a página onde são feitas as consultas das despesas.
-app.js: O arquivo que armazena os principais scripts para a interatividade do site.
 logo.png: Logo do site.
