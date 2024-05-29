@@ -13,10 +13,11 @@
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./script/app.js"></script>
 
 	</head>
 
-  <body>
+  <body onload="carregaListaDespesa()">
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
@@ -81,12 +82,12 @@
 
         <div class="col-md-6">
           <select class="form-control" id="tipo">
-            <option>Tipo</option>
-            <option value="1">Alimentação</option>
-            <option value="2">Educação</option>
-            <option value="3">Lazer</option>
-            <option value="4">Saúde</option>
-            <option value="5">Transporte</option>
+            <option value="">Tipo</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Educação">Educação</option>
+            <option value="Lazer">Lazer</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Transporte">Transporte</option>
           </select>
         </div>
       </div>
@@ -101,7 +102,7 @@
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onclick="pesquisarDespesa()">
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -120,12 +121,15 @@
               </tr>
             </thead>
 
-            <tbody>
+            <tbody id="listaDespesas">
             </tbody>
           </table>
         </div>
       </div>
     </div>
+
+    
+
   </body>	
 
 </html>
