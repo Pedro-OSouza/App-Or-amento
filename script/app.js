@@ -164,7 +164,6 @@ function carregaListaDespesa(despesa) {
 
          for(i = 0; i <= 3; i++) {
              let dadosDespesa = [`${item.dia} / ${item.mes} / ${item.ano}`, item.tipo, item.descricao, `R$ ${item.valor}`]
-
              linha.insertCell(i).innerHTML = dadosDespesa[i];
              
             }
